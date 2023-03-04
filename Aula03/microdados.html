@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microdados</title>
+</head>
+<body>
+  <header>
+    <h1>Filmes Icônicos</h1>
+  </header>
+
+  <!-- Emmet: div>article>(h1+p+div>(img+footer)) -->
+
+  <div>
+    
+    <!-- TODOS OS ITEMPROPS, TYPES ESTÃO NO SITE https://schema.org/ -->
+    <!-- É POSSÍVEL VALIDAR TAMBÉM NO https://validator.schema.org/ -->
+    
+    <article itemscope itemtype="https://schema.org/Movie">
+      <h1 itemprop="name">A Star is Born</h1>
+      <p itemprop="abstract">Jackson Maine é um cantor no auge da fama. Um dia, após deixar uma apresentação, ele para em um bar para beber. Lá, Jackson conhece Ally, uma insegura cantora que ganha a vida trabalhando em um restaurante. Ele se encanta por ela e seu talento. Mais tarde, os dois acabam se casando.</p>
+      <div>
+        <img itemprop="image" src="https://alfredojunior.files.wordpress.com/2018/10/filme-a-star-is-born-nasce-uma-estrela-lady-gaga.jpg" alt="movie-cover" width="300px">
+        
+        <footer itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">
+            Diretor: Bradley Cooper. 
+          </span>
+          <span itemprop="birthdate">January 5, 1975.</span>
+        </footer>
+
+      </div>
+    </article>
+  </div>
+
+  <!-- <main>
+    <table>
+      <tr>
+        <td itemprop="name">Interestelar</td>
+        <td itemprop="director">Cristopher Nolan</td>
+        <td itemprop="year">2014</td>
+      </tr>
+    </table>
+  </main> -->
+
+</body>
+</html>

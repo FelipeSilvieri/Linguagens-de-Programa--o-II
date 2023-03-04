@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+<body>
+  <form>
+    <!-- label[for="primeiroNome"]{Primeiro nome:} -->
+    <label for="primeiroNome">
+      Primeiro nome:
+      <input type="text">
+    </label>
+    <label for="primeiroNome">
+      Sobrenome:
+      <input type="text">
+    </label>
+
+    <label>
+      Email:
+      <input type="email">
+    </label>
+
+    <label>
+      Telefone:
+      <input type="tel">
+    </label>
+
+    <input type="submit" value="Enviar">
+
+    <input type="color">
+
+    <input type="file">
+    <textarea id="mensagem" cols="30" rows="10"></textarea>
+
+    <!-- select>option*4 -->
+    <select>
+      <option>São Paulo</option>
+      <option>Rio de Janeiro</option>
+      <option>Espírito Santo</option>
+      <option>Minas Gerais</option>
+    </select>
+
+    <!-- Definindo as bolinhas de check -->
+    <!-- input[type="radio"]*5 -->
+    
+    <fieldset>
+      <legend>Escolha um Veículo</legend>
+      <input 
+        type="checkbox"
+      id="vermelho"
+      name="cor" >
+      <label for="vermelho">Vermelho</label>
+      <input 
+        type="checkbox"
+      id="amarelo"
+      name="cor" >
+      <label for="amarelo">Amarelo</label>
+      <input 
+        type="checkbox"
+      id="preto"
+      name="cor" >
+      <label for="preto">Preto</label>
+    </fieldset>
+
+    <input id="X1" type="radio" name="veiculo" for="X1"><label>X1</label>
+    <input id="XC60" type="radio" name="veiculo" for="XC60"><label>XC60</label>
+    <input id="Q5" type="radio" name="veiculo" for="Q5"><label>Q5</label>
+    <input id="Discovery" type="radio" name="veiculo" for="Discovery"><label>Discovery</label>
+    <input id="Taycan" type="radio" name="veiculo" for="Taycan"><label>Taycan</label>
+
+  </form>
+</body>
+</html>
