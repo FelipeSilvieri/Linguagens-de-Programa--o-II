@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card-position">
+    <div class="card">
+      <header>
+        <h1>Evento Próximo a Acontecer</h1>
+      </header>
+      <main>
+        <!-- https://schema.org/Event -->
+         <!-- Emmet: div>article>(h1+p+div>(img+footer)) -->
+    
+         <div>
+          <article itemscope itemtype="https://schema.org/Event">
+            <span itemprop="name" id="name">
+              <span itemprop="performer">Vintage Culture </span>
+              <span >Long Set em SCS</span>
+            </span>
+            <span itemprop="startDate">- 25/03/2023</span>
+            <p itemprop="about">Depois de anos sem se apresentar na região do ABC, o DJ top 1 brasileiro Lukas Ruiz, mais conhecido como Vintage Culture decide voltar para um long set exclusivo, sem hora definida para acabar. </p>
+            <div>
+              <div class="imagem"><img src="https://www.folhavitoria.com.br/entretenimento/blogs/na-balada/wp-content/uploads/2020/08/VINTAGE-CULTURE-800x500.jpg" alt="Vintage Culture Profile Pic" width="500px" itemprop="image"></div>
+              <footer>
+                <span itemprop="organizer">Uma Organização CASTIERIPROD, 2023</span>
+              </footer>
+            </div>
+          </article>
+         </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

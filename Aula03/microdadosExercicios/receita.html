@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Receita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 itemprop="name">Receita Bolo de Fubá</h1>
+  </header>
+  <main>
+    <!-- https://schema.org/Event -->
+
+     <!-- Emmet: div>article>(h1+p+div>(img+footer)) -->
+    
+     <div>
+      <article itemscope itemtype="https://schema.org/Recipe">
+        <h2>Ingredientes</h2>
+        
+        <ul>
+          <li itemprop="recipeIngredient">3 ovos</li>
+          <li itemprop="recipeIngredient">2 xícaras (chá) de açucar</li>
+          <li itemprop="recipeIngredient">2 xícaras (chá) de fubá</li>
+          <li itemprop="recipeIngredient">3 colheres (sopa) rasas de farinha de trigo</li>
+          <li itemprop="recipeIngredient">1/2 copo (americano) de óleo</li>
+          <li itemprop="recipeIngredient">1 copo de leite</li>
+          <li itemprop="recipeIngredient">1 colher (sopa) de fermento em pó</li>
+        </ul>
+
+        <h1>Modo de Preparo</h1>
+
+        <ul>
+          <li itemprop="recipeInstructions">Bata todos os ingredientes no liquidificador.</li>
+          <li itemprop="recipeInstructions">Coloque em um forma untada e enfarinhada.</li>
+          <li itemprop="recipeInstructions">Leve ao forno preaquecido e deixe <span itemprop="cookingMethod">assar</span>, por <span itemprop="cookTime">cerca de 40 minutos</span>.</li>
+        </ul>
+
+        <div>
+          <div class="imagem"><img src="https://img.itdg.com.br/tdg/images/recipes/000/021/560/364475/364475_original.jpg?mode=crop&width=710&height=400" alt="Vintage Culture Profile Pic" width="500px" itemprop="image"></div>
+        </div>
+      </article>
+     </div>
+  </main>
+</body>
+</html>
