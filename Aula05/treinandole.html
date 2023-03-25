@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treindandole</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    
+    .container{
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: 100px;
+      background-color: darkred;
+      border: 1px solid black;
+    }
+    .box{
+      position: relative;
+      left: 50%;
+      width: 35%;
+      min-width: 100px;
+      height: 200px;
+      background-color: rgb(62, 62, 62);
+    }
+
+    .menu{
+      position: absolute;
+      width: 35%;
+      height: 1000px;
+      background-color: lightcoral;
+    }
+
+    @media(max-width: 400px){
+      .menu{
+        display: none;
+      }
+      body{
+        background-color: rgb(240, 203, 203)
+      };
+    }
+
+    @media(min-width: 900px){
+      .container{
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="container c1"></div>
+  <div class="container c2"></div>
+  <div class="container c3"></div> -->
+  <div class="menu"></div>
+  <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      font-size: 32px;
+    }
+    .engenharia,.farmacia,.matematica{
+      border: 1px solid black;
+    }
+    main{
+      border: 1px solid blue;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+    @media(min-width: 900px){
+      .engenharia,.farmacia,.matematica{
+        display: inline-block;
+        width: 20%;
+      }
+    }
+    @media(min-width: 550px){
+      .engenharia,.farmacia,.matematica{
+        background-color: rgb(18, 58, 94);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="engenharia">Engenharia</article>
+    <article class="farmacia">Farmácia</article>
+    <article class="matematica">Matemática</article>
+  </main>
+</body>
+</html>
